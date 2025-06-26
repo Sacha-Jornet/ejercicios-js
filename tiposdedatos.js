@@ -1,0 +1,39 @@
+
+dato = null; // Tiene dato pero es null osea nullo, osea es una variable definida por mas que no tenga un X valor.
+
+dato = undefined // este si es un concepto de no estar definido pero en un futuro podemos definirla asi funciona undefined.
+
+nan // implica que estamos haciendo una operacion con un elemento que no es un numero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
