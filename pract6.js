@@ -479,44 +479,257 @@ for (let i = 0; i < numeros.length; i++){
 
 // ---------------------- 0 --------------------- //
 
+/* 
+Array anidado (menú de comidas por día)
+Objetivo: Practicar bucle anidado con arrays bidimensionales.
+
+Consigna: Mostrá los platos por día de la semana. Usá dos bucles: uno para los días y otro para los platos.
+
+const menu = [
+            ["Lunes", "Milanesa", "Puré"],
+            ["Martes", "Pastas", "Salsa Bolognesa"],
+            ["Miércoles", "Pizza", "Ensalada"],
+            ["Jueves", "Empanadas", "Fideos"],
+            ["Viernes", "Hamburguesa", "Papas Fritas"]
+        ];
+
+        for (let i = 0; i < menu.length; i++) {
+            document.write(`<br><b> El menu del dia:</b> ${menu[i][0]} <br>`)
+            for (let j = 1; j < menu[i].length; j++) {
+                document.write(`<b>Plato:</b> ${menu[i][j]} <br>`)
+            }
+
+        };
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+/* 
+Contar cuántos positivos hay en un array
+Objetivo: Bucle for con contador personalizado.
+
+Consigna: Contar cuántos números positivos hay en el siguiente array.
 
 
+const datos = [-3, 7, 0, -1, 5, 2, -8];
+
+for (let i = 0; i < datos.length; i++){
+    if (datos[i] > 0 ){
+        document.write("<b> Numeros positivos :</b> ", `( ${datos[i]} ) .`, "<br>")
+    }
+}
+    
+*/
+
+// ---------------------- 0 --------------------- //
+
+/* Matriz numérica de 3x3
+        Objetivo: Construir matriz usando for anidado.
+        
+        Consigna: Mostrá en consola una matriz de 3x3 con los números del 1 al 9.
+        
+
+        let contador = 1;
+        for (let f = 0; f < 3; f++) {
+            let linea = "";
+            for (let c = 0; c < 3; c++) {
+                linea += contador + "";
+                contador++;
+            }
+            document.write(linea.trim(), "<br>");
+        }
+*/
+
+// ---------------------- 0 --------------------- //
+
+/* 
+        Sumar todos los elementos de un array anidado
+        Objetivo: Recorrer arrays bidimensionales y acumular una suma.
+        
+        Consigna: Sumá todos los números de la siguiente matriz numeros.
+        
+
+        const numeros = [
+            [2, 4, 6],
+            [1, 3, 5],
+            [7, 8, 9]
+        ];
+
+        let suma = 0;
+
+        for (let f = 0; f < numeros.length; f++) {
+            for (let c = 0; c < numeros[f].length; c++) {
+                suma += numeros[f][c];
+            }
+        }
+        document.write(`Suma total: ${suma}`)
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+/* 
+Buscar el mayor número de un array
+Objetivo: Recorrer array y usar una variable para guardar el valor más alto.
+
+Consigna: Encontrá el número más grande del siguiente array valores.
 
 
+const valores = [14, 3, 22, 9, 41, 7, 30];
 
+let valorAlto = valores[0];
 
+for ( i = 1; i < valores.length; i++){
+    if (valores[i] > valorAlto){
+        valorAlto = valores[i];
 
+    }
+}
+document.write(`Máximo valor: ${valorAlto}`);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /* 
+        Buscar el menor número de un array
+        Objetivo: Reutilizar la lógica anterior para hallar el mínimo.
+        
+        Consigna: Encontrá el número más chico del siguiente array valores.
+        
 
+        const valores = [14, 3, 22, 9, 41, 7, 30];
 
+        let minimoValor = valores[0];
 
+        for (let i = 1; i < valores.length; i++) {
+            if (valores[i] < minimoValor) {
+                minimoValor = valores[i]; // si el proceso anterior da true de que x numero es menor q x numero aqui hace q dentro de minimovalor se remplace o se remplacen los numeros en el interior de la variable hasta quedar con el numero minimo del array.
 
+                valorAlto = valores[i]:
+                - Si la condición es true, actualiza valorAlto con el nuevo número más grande.
+                - Siguiendo el ejemplo: Ahora valorAlto valdrá 7. 
+            }
+        }
+        document.write(`Mínimo valor: ${minimoValor}`);
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+/* 
+        Suma por filas en array anidado
+        Objetivo: Usar bucles anidados para sumar por separado cada fila.
+        
+        Consigna: Mostrá la suma de cada fila del siguiente array.
+        
 
+        const matriz = [
+            [3, 5, 2],
+            [10, 4, 1],
+            [6, 6, 6]
+        ];
 
+        for (let f = 0; f < matriz.length; f++) {
+            let sumaTotal = 0;
+            for (let c = 0; c < matriz[f].length; c++) {
+                sumaTotal += matriz[f][c];
 
+            }
+            document.write(`Suma de la fila: ${f + 1} : ${sumaTotal} <br>`) // el mas uno {f +1} corre la salida de 0 a 1 haciendo... Explicación sencilla:
 
+- En programación, los índices de arrays empiezan en 0 (fila 0, fila 1, fila 2...).
+- Pero al mostrar información al usuario, es más común empezar en 1 (fila 1, fila 2, fila 3...).
+- Si f = 0 → f + 1 muestra "Fila 1" (en lugar de "Fila 0").
+- Si f = 1 → f + 1 muestra "Fila 2", y así sucesivamente.
 
+¿Por qué no usar f directamente?
 
+- Porque sería confuso para el usuario final:
+- Con f (índice base 0): "Fila 0", "Fila 1"... (raro para no programadores).
+- Con f + 1 (base 1): "Fila 1", "Fila 2"... (formato natural).
 
+        }
+*/
 
+// ---------------------- 0 --------------------- //
 
+/* Dado un array de números, usá un bucle for para sumar todos los elementos y mostrar el resultado total. 
 
+let suma = 0;
+const numeros = [5, 8, 3, 10, 2];
+for ( let i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+}
+document.write(`Suma total: ${suma}`)
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+        Buscar el número mayor en un array
+        Consigna:
+        Recorrer un array con un for y encontrar el valor más alto.
+        
 
+        const numeros = [45, 12, 78, 34, 89, 23];
 
+        let maximo = numeros[0];
 
+        for (let i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maximo) {
+                maximo = numeros[i]
 
+            }
+        }
 
+        document.write(`maximo: ${maximo}`)
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Imprimir todos los elementos de una matriz (for anidado)
+        Consigna:
+        Dada una matriz de números, imprimir todos los elementos, fila por fila.
 
+        const matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
 
+        for (let fila = 0; fila < matriz.length; fila++) {
+            for (let columna = 0; columna < matriz[fila].length; columna++) {
+                document.write(`Elemento en [${fila}][${columna}]:`, matriz[fila][columna], "<br>");
+            }
+        };
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /* Sumar cada fila de una matriz
+        Consigna:
+        Dada una matriz, calcular y mostrar la suma de cada fila. 
+
+        const matriz = [
+            [3, 5, 2],
+            [1, 7, 4],
+            [6, 0, 8]
+        ];
+
+for (let fila = 0; fila < matriz.length; fila++){
+    let suma = 0;
+    for (let col = 0; col < matriz[fila].length; col++){
+        suma += matriz[fila][col];
+
+    }
+    document.write(`Suma de fila ${fila}: `, suma, "<br>");
+}
+;
+
+// ---------------------- 0 --------------------- //
 
 
 
