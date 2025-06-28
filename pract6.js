@@ -731,74 +731,357 @@ for (let fila = 0; fila < matriz.length; fila++){
 
 // ---------------------- 0 --------------------- //
 
+        /* 
+        Crear tabla de multiplicar del 1 al 5 (for anidado)
+        Consigna:
+        Generar e imprimir las tablas de multiplicar del 1 al 5, usando bucles anidados.
+        
+
+        document.write(`<br>-----------<br><br>`)
+        for (let i = 1; i <= 10; i++) {
+            document.write(`Tabla del <b>(${i})</b> <br><br>`)
+            for (let j = 1; j <= 10; j++) {
+                document.write(`${i} X ${j} = <b>${i * j}</b> <br>`)
+            }
+            document.write(`<br>-----------<br><br>`)
+        };
+*/
+
+// ---------------------- 0 --------------------- //
+
+
+/*
+        Reemplazar números pares por 0 en un array
+        Consigna:
+        Recorrer un array y reemplazar los números pares por 0. Mostrar el nuevo array.
+        
+        
+        const numeros = [4, 7, 9, 2, 10, 3];
+        
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 === 0) {
+                numeros[i] = 0;
+        
+        
+            }
+        }
+        
+        document.write("Array modificado:", numeros);
+        
+        */
+
+// ---------------------- 0 --------------------- //
+
+// BUCLE WHILE
+
+/* 
+let i = 0;
+
+while (i <= 5 ){
+document.write(`variable i : ${i} <br> `);
+i++
+}
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contar del 1 al 10 con while
+Consigna:
+Usá un bucle while para imprimir los números del 1 al 10.
+
+
+let i =  0;
+while ( i <= 10) {
+    document.write(`El numero es : ${i} <br>`);
+    i++
+};
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Sumar números hasta llegar (o superar) 100
+Consigna:
+Dado un array de números, sumalos uno a uno usando while hasta que la suma llegue o supere 100. Mostrá el resultado final.
+
+const numeros = [15, 20, 10, 30, 25, 5, 10];
+
+let i = 0;
+let suma = 0;
+
+while ( i < numeros.length && suma < 100 ) {
+suma += numeros[i];
+i++;
+}
+document.write(`suma : ${suma}`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Validar contraseña con intento limitado
+        Consigna:
+        Simular un sistema de login. Mientras el usuario no escriba la contraseña correcta ("jarvis123") y tenga intentos disponibles (máximo 3), seguir pidiendo que ingrese la contraseña.
+        
+
+
+        let contraseña = "";
+        let correcta = "jarvis123"
+        let intentos = 0;
+
+        while (intentos < 3 && contraseña !== correcta) {
+            contraseña = prompt(`ingrese su contraseña:`);
+            intentos++;
+        }
 
+        if (contraseña === correcta) {
+            document.write(`Contraseña correcta... INGRESANDO..`);
+        } else {
+            document.write(`Contraseña incorrecta`)
+        }
+*/
 
+// ---------------------- 0 --------------------- //
 
+ /* Buscar un número en un array con while
+        Consigna:
+        Dado un número objetivo, buscá si está presente en un array usando while. Si se encuentra, mostrar su posición. Si no, indicar que no existe. 
 
+        const numeros = [11, 23, 45, 67, 89];
+        const objetivo = 45;
 
+        let i = 0;
+        let encontrado = false;
 
+        while (i < numeros.length) {
+            if (numeros[i] === objetivo) {
+                encontrado = true;
+                break;
+            }
+            i++;
+        }
 
+        if (encontrado) {
+            document.write(`Número ${objetivo} encontrado en la posición ${i} <br>`)
+        } else {
+            document.write(`Número ${objetivo} no encontrado en el array <br>`);
+        };
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /* 
+        Contar cuántos números son pares en un array
+        Consigna:
+        Usá un while para contar cuántos elementos pares hay en un array de números. 
+        
 
+        const numeros = [2, 7, 4, 9, 6, 3, 8];
+        let contador = 0;
+        let i = 0;
+        let pares = 0;
 
+        while (i < numeros.length) {
+            if (numeros[i] % 2 === 0) {
+                pares++;
 
+            }
+            i++;
+        }
 
+        document.write(`Cantidad de números pares:", ${pares}`);
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Crear cuenta regresiva desde un número dado
+Consigna:
+Dado un número inicial, crear una cuenta regresiva con while hasta llegar a 0.
 
 
+let inicial = 10;
 
+while (inicial >= 0) {
+    document.write(inicial, "<br>");
+    inicial--;
+}
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Repetir ingreso hasta que escriba “salir”
+        Consigna:
+        Usá un while para pedir al usuario un texto. El ciclo termina solo si el usuario escribe "salir".
+ 
 
+        let ingresos = "";
 
+        while (ingresos !== "salir") {
+            ingresos = prompt("Escribí algo (o 'salir' para terminar):");
+            document.write(`Ingresaste: ", <br> ${ingresos}`);
 
+        }
 
+ */
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Buscar la primera palabra larga (más de 6 letras)
+        Consigna:
+        Dado un array de palabras, encontrá la primera palabra que tenga más de 6 caracteres usando while.
+        
 
+        const palabras = ["sol", "luna", "maravilla", "cielo", "estrella"];
 
+        let p = 0;
+        let encontrado = null;
 
+        while (p < palabras.length) {
+            if (palabras[p].length > 6) {
+                encontrado = palabras[p];
+                break;
+            }
+            p++;
+        }
 
+        if (encontrado) {
+            document.write("Primera palabra larga encontrada: <b>", encontrado);
+        } else {
+            document.write("No hay palabras largas");
+        }
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar los primeros 20 números naturales
+Consigna:
+Utilizá un bucle for para sumar del 1 al 20 e imprimir el resultado final.
 
 
+let sumaTotal = 0;
 
+for (let i = 1; i <= 20; i++) {
+sumaTotal += i;
+};
+document.write(`Suma Total: <b>${sumaTotal}</b> <br>`);
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Mostrar números pares del 2 al 20
+Consigna:
+Imprimí todos los números pares entre 2 y 20 usando for.
 
 
 
+for (let i = 2; i <= 20; i++) {
+if ( i % 2 === 0){
 
+document.write(`Numeros pares: <b>${i}</b> <br>`)
+}
 
+}
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+         Recorrer un array de arrays (matriz)
+        Consigna:
+        Mostrá todos los elementos de una matriz 2x3 utilizando for anidado.
+      
 
+        const matriz = [
+            [1, 2, 3],
+            [4, 5, 6]
+        ];
 
+for ( let fila = 0; fila < matriz.length; fila++) {
+    for (let col = 0; col < matriz[fila].length; col++) {
+        document.write(`${matriz[fila][col]} <br>`);
+    }
+};
 
+  */
 
+// ---------------------- 0 --------------------- //
 
+        /* 
+        Sumar todos los números de una matriz
+        Consigna:
+        Sumá todos los valores de una matriz de números.
+    
+        const numeros = [
+            [5, 3],
+            [2, 8],
+            [1, 4]
+        ];
 
+        let sumaTotal = 0;
 
+        for (let i = 0; i < numeros.length; i++) {
+            for (let j = 0; j < numeros[i].length; j++) {
+                sumaTotal += numeros[i][j]
+}
+        }
 
+        document.write(`Suma Total : ${sumaTotal} `);
+    */
 
+// ---------------------- 0 --------------------- //
 
+        /* 
+        Buscar un valor en una matriz
+        Consigna:
+        Verificá si un número específico existe en una matriz.
+        
 
+        const matriz = [
+            [10, 20],
+            [30, 40],
+            [50, 60]
+        ];
 
+        let valor = 50;
+        let encontrado = false;
 
+        for (let i = 0; i < matriz.length; i++) {
+            for (let j = 0; j < matriz[i].length; j++) {
+                if (matriz[i][j] === valor) {
+                    encontrado = true;
 
+                }
+            }
+        }
 
+        document.write("¿Número encontrado?:", encontrado)
+*/
 
+// ---------------------- 0 --------------------- //
 
+/* 
+Contar del 1 al 10
+Consigna:
+Usá un while para imprimir los números del 1 al 10.
 
+let i = 1;
+while (i <= 10) {
+document.write(i, "<br>");
+i++;
+}
+*/
 
-
-
+// ---------------------- 0 --------------------- //
 
 
 
