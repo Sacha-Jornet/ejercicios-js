@@ -1083,51 +1083,238 @@ i++;
 
 // ---------------------- 0 --------------------- //
 
+// git push -u origin main 
+
+// ---------------------- 0 --------------------- //
+
+/*
+Pedir contraseñas hasta acertar
+Consigna:
+Simulá un sistema que pida una contraseña hasta que el usuario ingrese la correcta (simulado con prompt).
+
+const contraseña = "coballa";
+let intentos = "";
+let intentosFallidos = [];
+
+while (intentos !== contraseña ) {
+    intentos = prompt(`Ingrese su contraseña: `)
+    intentosFallidos += intentos + "<br>";
+}
+document.write(`Contraseña correcta...CARGANDO....`);
+document.write(`<br> tus intentos : <br>${"<br>",intentosFallidos}`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /* 
+        Contar con condición de corte
+        Consigna:
+        Sumar números hasta que la suma acumulada supere 100.
+        
+
+        let suma = 0;
+        let contador = 0;
+
+        while (suma <= 100) {
+            suma += 15;
+            contador++;
+
+        }
+
+        document.write("Cantidad de sumas:", contador, "<br>");
+        document.write("Suma final:", suma);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Sumar todos los elementos de un array
+Objetivo: Recorre un array de números con un for y suma todos sus elementos.
+
+let suma = 0;
+const numeros = [3, 7, 2, 9, 5];
+for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i]
+};
+document.write("Suma total: ", suma, "<br>")
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Imprimir los elementos de una matriz (array de arrays)
+        Objetivo: Usar bucles for anidados para imprimir todos los valores de una matriz.
+        
+        const matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+for ( let fila = 0; fila < matriz.length; fila++) {
+    for (col = 0; col < matriz[fila].length; col++) {
+        document.write(`Elemento <b>[${fila}][${col}]</b>: `, "<b>", matriz[fila][col], "</b>", "<br>")
+    }
+}
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contar cuántos números son pares en un array
+Objetivo: Usar un bucle for para contar cuántos números del array son pares.
+
+const lista = [4, 7, 10, 15, 22, 9, 6];
+
+let contador = 0;
+
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i] % 2 === 0) {
+contador++;
+}
+}
+document.write(`Pares: ${contador} <br>`)
+*/
+
+// ---------------------- 0 --------------------- //
+
+ /* 
+        Buscar un número en una matriz
+        Objetivo: Usar bucles anidados para buscar un número en una matriz. Mostrar si se encuentra o no.
+        
+
+        const matriz = [
+            [3, 5, 7],
+            [1, 9, 0],
+            [4, 6, 8]
+        ];
+
+        let numeroBuscado = 9;
+        let encontrado = false;
+
+        for (let fila = 0; fila < matriz.length; fila++) {
+            for (let col = 0; col < matriz[fila].length; col++) {
+                if (matriz[fila][col] === numeroBuscado) {
+                    encontrado = true;
+                    document.write(`Número ${numeroBuscado} encontrado en [${fila}][${col}] <br>`);
+                }
+            }
+        }
+
+        if (!encontrado) {
+            document.write(`Número ${numeroBuscado} no encontrado`);
+        };
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contador descendente con bucle while
+Objetivo: Usar un bucle while para mostrar un contador que va de 10 a 1.
+
+let contador = 10;
+
+while (contador >= 1) {
+    document.write(`contador : ${contador} <br>`)
+contador--;
+}
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Sumar elementos de un array usando while
+Objetivo: Usar while en lugar de for para recorrer un array y sumar sus elementos.
+
+const numeros = [3, 6, 2, 8, 5];
+
+let sumaTotal = 0;
+let num = 0;
+
+while (num < numeros.length) {
+    sumaTotal += numeros[num]
+num++;
+}
+document.write(`suma : ${sumaTotal} <br>`)
+*/
+
+// ---------------------- 0 --------------------- //
+
+       /*
+        Buscar nombre en array con bucle while
+        Objetivo: Buscar un nombre dentro de un array usando while. Detener si se encuentra.
+        
+
+        const nombres = ["Ana", "Luis", "Carlos", "Valeria", "Pablo"];
+        let buscar = "Pablo";
+
+        let nom = 0;
+        let encontrado = false;
+
+        while (nom < nombres.length && !encontrado) {
+            if (nombres[nom] === buscar) {
+                encontrado = true;
+                
+                document.write(`${buscar} fue encontrado en la posición  ${nom}`);
+            }
+            nom++;
+        }
+        if (!encontrado) {
+            document.write(`${buscar} no se encontró`);
+        }
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Multiplicar todos los elementos de un array
+Objetivo: Multiplicar todos los elementos de un array usando un bucle for.
 
 
+const numeros = [2, 4, 3];
 
+let producto = 1;
 
+for ( let i = 0; i < numeros.length; i++){
 
+    producto *= numeros[i];
+}
+document.write ("Producto total:", producto);
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Mostrar elementos en diagonal de una matriz
+        Objetivo: Usar un solo for para recorrer la diagonal principal de una matriz cuadrada.
+        
 
+        const matriz = [
+            [5, 1, 2],
+            [3, 9, 4],
+            [7, 6, 8]
+        ];
 
+for (let i = 0; i < matriz.length; i++) {
+    document.write(`Diagonal [${i}][${i}]: `, matriz[i][i], "<br>");
+}
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Imprimir array al revés
+Objetivo: Imprimir los elementos de un array de atrás hacia adelante con un for.
+*/
 
+const nombres = ["Mario", "Lucía", "Ana", "Pedro"];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for (let i = nombres.length -1; i >= 0;  i--) {
+    document.write("Nombre:", nombres[i], "<br>")
+}
 
 
 
