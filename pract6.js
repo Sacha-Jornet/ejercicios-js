@@ -1308,130 +1308,565 @@ for (let i = 0; i < matriz.length; i++) {
 /*
 Imprimir array al revés
 Objetivo: Imprimir los elementos de un array de atrás hacia adelante con un for.
-*/
+
 
 const nombres = ["Mario", "Lucía", "Ana", "Pedro"];
 
 for (let i = nombres.length -1; i >= 0;  i--) {
     document.write("Nombre:", nombres[i], "<br>")
 }
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar los números pares entre 1 y 50
+Consigna:
+Utiliza un bucle for para sumar todos los números pares entre el 1 y el 50 (inclusive) y mostrar el resultado en la consola.
 
+let suma = 0;
 
+for ( let i = 0; i <= 50; i++) {
+    if (i % 2 === 0) {
+        suma += i;
 
+    }
+}
 
+document.write(`Suma total : ${suma}`);
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+       /*
+        EJERCICIO 2: Recorrer matriz 3x3 e imprimir elementos
+        Consigna:
+        Utiliza un bucle for anidado para recorrer una matriz de 3x3 y mostrar cada valor con su posición en la consola.
+       
 
+        let matriz = [
+            [10, 20, 30],
+            [40, 50, 60],
+            [70, 80, 90]
+        ];
 
+        for (let fil = 0; fil < matriz.length; fil++) {
+            for (let col = 0; col < matriz[fil].length; col++) {
+                document.write(`Elemento en fila ${fil}, columna ${col} : <b>`, matriz[fil][col], "</b><br>")
 
+            }
+        }
 
+ */
 
+// ---------------------- 0 --------------------- //
 
 
+        /*
+        Invertir un array con bucle for
+        Consigna:
+        Dado un array de palabras, crea otro array con las palabras en orden inverso usando un bucle for.
 
+        let palabras = ["sol", "luna", "estrella", "planeta"];
 
+        let nuevoArray = [];
 
+        for (let i = palabras.length - 1; i >= 0; i--) {
+            nuevoArray.push(palabras[i]);
 
+        }
 
+        document.write(nuevoArray);
 
+ */
 
+// ---------------------- 0 --------------------- //
 
+/*
+Contador descendente con while
+Consigna:
+Usar un bucle while para contar de 10 a 1 y mostrar cada número.
 
+let i = 10;
 
+while ( i >= 1) {
+    document.write("Contando:", i , "<br>");
+    i--;
+}
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar los números de un array usando while
+Consigna:
+Dado un array de números, usar un bucle while para sumar todos sus valores.
 
+let numeros = [5, 8, 12, 3, 7];
+let suma = 0;
+let i = 0;
 
+while (i < numeros.length) {
+    suma += numeros[i];
+i++;
+}
+document.write("Suma total del array: ", suma);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Mostrar patrón con for anidado
+        Consigna:
+        Usar bucles for anidados para mostrar el siguiente patrón en consola:
+        
 
+        for (let fil = 1; fil <= 4; fil++) {
+            let fila = "";
+            for (let col = 1; col <= fil; col++){
+                fila += "* ";
+                }
+                document.write(fila.trim(), "<br>")
+        }
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Buscar el número mayor en un array
+        Consigna:
+        Dado un array de números, usar un bucle for para encontrar el número más grande.
+        
 
+        let numeros = [12, 45, 8, 29, 61, 4];
 
+        let mayor = numeros[0];
 
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i]
 
+            }
+        }
 
+        document.write("El número mayor es: ", mayor)
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Mostrar todos los múltiplos de 3 del 1 al 30
+Consigna:
+Utilizar un bucle for para imprimir en consola los números del 1 al 30 que sean múltiplos de 3.
 
 
+for (let i = 3; i < 30 +1;  i+= 3) {
+    document.write(i, "<br>")
+}
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Contar cuántos números impares hay en un array
+        Consigna:
+        Dado un array de números, usar un bucle while para contar cuántos elementos son impares.
 
+        let datos = [10, 3, 7, 8, 15, 22, 9];
 
+        let num = 0;
+        let contador = 0;
 
+        while (num < datos.length) {
+            if (datos[num] % 2 === 1) {
+                contador++;
+            }
+            num++;
+        }
 
+        document.write("Cantidad de números impares: ", contador);
+  */
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Sumar solo los elementos de la diagonal principal de una matriz 3x3
+        Consigna:
+        Usar bucle for para sumar los elementos de la diagonal principal de una matriz 3x3.
 
+        let matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
 
+        let sumaDiagonal = 0;
 
+        for (let i = 0; i < matriz.length; i++) {
+            sumaDiagonal += matriz[i][i];
+        }
+        document.write("Suma de la diagonal principal: ", sumaDiagonal)
+ */
 
+// ---------------------- 0 --------------------- //
 
+/*
+Contador hasta número objetivo con while
+Consigna:
+Pedirle al programa que cuente desde 0 hasta un número objetivo (objetivo = 7) y muestre cada número en consola.
 
 
+let objetivo = 7;
+let i = 0;
 
+while (i <= objetivo) {
+document.write(i, "<br>")
+i++;
+}
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Mostrar tabla de multiplicar (del 1 al 10) usando for anidado
+Consigna:
+Imprimir en consola las tablas del 1 al 3, cada una del 1 al 10, usando bucles for anidados.
 
+for (let i = 1; i <= 10; i++ ) {
+    document.write(`<br> Tabla del [<b> ${i} </b>] <br><br>`)
+    for (let j = 1; j <= 10; j++) {
+        document.write(`${i} X ${j} = <b>${j * i}</b><br> `)
+    }
+}
 
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Calcular promedio de un array
+Consigna:
+Dado un array de números, recorrerlo con un bucle for para calcular el promedio de sus elementos.
 
+let numeros = [6, 8, 9, 5, 7];
+let suma = 0;
 
+for ( let i = 0; i < numeros.length; i++) {
+suma += numeros[i];
 
+}
 
+let promedio = suma / numeros.length
+document.write("Promedio del array: ", promedio)
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar solo los elementos mayores a 10 en un array
+Consigna:
+Dado un array de números, sumar solo los valores que sean mayores a 10 utilizando un bucle for.
 
+let valores = [4, 11, 9, 15, 3, 22];
+let suma = 0;
 
+for ( let i = 0; i < valores.length; i++ ){
+if (valores[i] > 10 ) {
+suma += valores[i];
 
+}
+}
 
+document.write("Suma de valores mayores a <b>10 : ", suma , "</b>");
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Contar cuántos elementos hay en una matriz 2D
+        Consigna:
+        Dada una matriz bidimensional, contar la cantidad total de elementos usando for anidados.
+        
 
+        let matriz = [
+            [1, 2, 3],
+            [4, 5],
+            [6, 7, 8, 9]
+        ];
 
+let total = 0;
 
+for ( let i = 0; i < matriz.length; i++) {
+for (let j = 0; j < matriz[i].length; j++) {
+    total++;
+}
 
+}
 
+document.write("<b>C</b>antidad total de elementos en la matriz : <b>", total)
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar los primeros 10 números naturales
+Objetivo: Usar un bucle for para sumar los números del 1 al 10.
 
+let suma = 0;
+for (let i = 1; i <= 10; i++) {
+    suma += i
+}
+document.write(`Suma total: ${suma}`);
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Imprimir una tabla de multiplicar con for anidado
+Objetivo: Usar dos bucles for anidados para mostrar la tabla de multiplicar del 1 al 5.
 
+for (let i = 1; i <= 10; i++){
+    document.write(`<br>Tabla de multiplicar de (<b> ${i} </b>)<br><br>`);
+    for(let j = 1; j <= 10; j++){
+        document.write(`${i} X ${j} = <b>${j * i}</b> <br>`);
+    }
+}
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Contador descendente con bucle while
+Objetivo: Usar while para contar de 10 a 1.
 
+let num = 10;
 
+while (num > 0) {
+document.write("Numero: ", num, "<br>")
+num--;
+}
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar los números pares entre 1 y 20 (for)
+Objetivo: Detectar pares y sumarlos usando for.
 
+let suma = 0;
+for (let i = 1; i <= 20; i++){
+    if (i % 2 === 0) {
+    suma += i
+    }
+}
+document.write("Suma de numeros pares: <b>", suma , "<br>")
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Sumar todos los elementos de un array
+Objetivo: Usar un for para sumar los elementos del array.
 
+const numeros = [3, 7, 2, 9, 4];
+let suma = 0;
 
+for (let i = 0; i < numeros.length; i++){
+    suma += numeros[i]
+}
+document.write(`La suma del array es: ${suma}`);
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Encontrar el número mayor en un array
+Objetivo: Recorrer el array y encontrar el número más grande.
 
+const valores = [12, 45, 3, 22, 89, 5];
+let mayor = valores[0]
 
+for ( let i = 1; i < valores.length; i++) {
+    if (valores[i] > mayor) {
+        mayor = valores[i];
+        
+    }
+}
 
+document.write(mayor)
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Recorrer una matriz (array 2D) y mostrar los elementos
+        Objetivo: Usar for anidado para mostrar todos los valores de una matriz.
 
+        const matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
 
+        for (let fila = 0; fila < matriz.length; fila++) {
+            for (let col = 0; col < matriz[fila].length; col++) {
+                document.write(`Elemento [${fila}][${col}] = ${matriz[fila][col]} <br> `)
+            }
+        }
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Contar cuántos números pares hay en un array (while)
+Objetivo: Usar un while para contar pares en un array.
 
+const numeros = [2, 5, 8, 11, 14, 17];
+let num = 0;
+let  contador = 0;
 
+while (num < numeros.length) {
+    if (numeros[num] % 2 === 0){
+contador++;
 
+    }
+num++
+}
+document.write("Cantidad de números pares: ", contador);
+*/
 
+// ---------------------- 0 --------------------- //
+
+        /*
+        Sumar todos los elementos de una matriz
+        Objetivo: Usar for anidado para sumar todos los números en una matriz.
+
+        const matriz = [
+            [1, 2],
+            [3, 4],
+            [5, 6]
+        ];
+
+        let sumaTotal = 0;
+
+        for (let fila = 0; fila < matriz.length; fila++) {
+            for (let col = 0; col < matriz[fila].length; col++) {
+                sumaTotal += matriz[fila][col];
+
+            }
+        }
+
+        document.write("Suma total de la matriz : <b>", sumaTotal);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Invertir los elementos de un array (sin usar .reverse())
+        Objetivo: Crear un nuevo array con los elementos del original en orden invertido usando for.
+
+        const original = [10, 20, 30, 40, 50];
+
+        let invertido = [];
+
+        for (let i = original.length - 1; i >= 0; i--) {
+            invertido.push(original[i]);
+
+        }
+        document.write("<b>A</b>rray invertido: <b>", invertido);
+ */
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contar cuántas veces se repite un número en un array
+Objetivo: Usar for para contar repeticiones de un número dado.
+
+const lista = [4, 2, 4, 5, 4, 6, 2, 4];
+
+let numero = 4;
+let contador = 0;
+
+for ( let i = 0; i < lista.length; i++){
+    if (lista[i] === numero) {
+        contador++;
+    }
+}
+
+document.write(`El número ${numero} se repite ${contador} veces`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Reemplazar todos los valores negativos por 0 en una matriz
+        Objetivo: Usar for anidado y condicional para reemplazar negativos por 0.
+
+        let matriz = [
+            [5, -3, 2],
+            [-8, 0, 4],
+            [1, -2, -6]
+        ];
+
+        for (let i = 0; i < matriz.length; i++) {
+            for (let j = 0; j < matriz[i].length; j++) {
+                if (matriz[i][j] < 0) {
+                    matriz[i][j] = 0;
+
+                }
+            }
+        }
+
+        document.write("Matriz modificada: ", matriz, "<br>");
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Filtrar números mayores a un valor dado en un array
+        Objetivo: Usar bucle for y condicional para filtrar.
+
+        const numeros = [3, 12, 7, 25, 10, 6, 18];
+
+        const mayores = [];
+        const valor = 10;
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > valor) {
+                mayores.push(numeros[i]);
+
+            }
+        }
+
+        document.write("Números mayores a ", valor, " : ", mayores);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Detectar duplicados en un array (nivel medio)
+Objetivo: Usar doble for para buscar elementos repetidos (solo los que aparecen más de una vez).
+
+const datos = [4, 5, 2, 4, 3, 5, 7];
+
+const repetidos = [];
+
+for (let i = 0; i < datos.length; i++) {
+    for (let j = i +1; j < datos.length; j++) {
+if (datos[i] === datos[j] && !repetidos.includes(datos[i])) {
+repetidos.push(datos[i])
+}
+
+    }
+}
+document.write("Elementos duplicados:", repetidos );
+
+*/
+
+// ---------------------- 0 --------------------- //
 
 
 
