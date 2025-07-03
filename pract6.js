@@ -1868,6 +1868,925 @@ document.write("Elementos duplicados:", repetidos );
 
 // ---------------------- 0 --------------------- //
 
+/*
+Contar del 1 al 5 con do...while
+Objetivo: Usar do...while para imprimir los números del 1 al 5.
+
+let num = 1;
+
+do {
+    document.write(`numero : ${num} <br>`)
+    num++;
+
+} while ( num <= 5 );
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+        Pedir números hasta que el usuario ingrese 0
+        Objetivo: Usar do...while para pedir números y salir cuando se ingresa 0.
+        (Simulamos el input con un array para que funcione en entorno sin prompt.)
+
+        const entradas = [4, 7, 2, 0];
+        let num = 0;
+        let entrada;
+
+        do {
+            entrada = entradas[num];
+            document.write(`Ingresaste: ${entrada} <br>`);
+            num++;
+        } while (entrada !== 0);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Sumar los números del 1 al 10 con do...while
+Objetivo: Sumar todos los números del 1 al 10.
+
+let suma = 0;
+let contador = 1;
+
+do {
+suma += contador;
+contador++;
+
+} while (contador <= 10);
+
+document.write("Suma total:", suma);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Mostrar números pares del 1 al 20
+        Objetivo: Imprimir solo los pares usando do...while.
+        
+
+        let num = 1;
+
+        do {
+            if (num % 2 === 0)
+                document.write(num, "<br>")
+            num++;
+        } while (num <= 20);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Imprimir del 1 al 5
+Consigna:
+Usa un bucle do...while para imprimir los números del 1 al 5 en consola.
+
+let num = 1
+
+do {
+
+document.write(`Numero: ${num} <br>`)
+num++;
+
+} while ( num <= 5 );
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Pedir un número hasta que sea mayor que 10
+Consigna:
+Pide al usuario un número usando prompt() hasta que ingrese un valor mayor que 10.
+
+let numero;
+
+do {
+
+let usuario = parseInt(prompt(`Ingrese sus numeros aqui: `))
+
+} while (numero < 10);
+
+document.write(`Excelente`)
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Sumar del 1 al 100
+Consigna:
+Usa do...while para sumar todos los números del 1 al 100 e imprimir el resultado.
+
+let suma = 0;
+let num = 1;
+
+do {
+
+    suma += num
+num++;
+
+} while (num <= 100);
+
+document.write(`La suma total es : ${suma}`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Mostrar números pares del 2 al 10
+Consigna:
+Usa un bucle do...while para mostrar todos los números pares entre 2 y 10.
+
+let contador = 0;
+let num = 2;
+
+
+do {
+
+    if (num % 2 === 0) {
+        document.write(`Los numeros pares son: ${num} <br>`);
+contador++;
+    }
+
+num++;
+} while (num <= 20);
+
+document.write(`<br> Total de números pares encontrados: ${contador} <br>`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contador regresivo desde 5
+Consigna:
+Imprime un contador regresivo desde 5 hasta 1 usando do...while.
+
+let num = 5;
+
+do {
+
+document.write(`Numero : ${num} <br>`)
+
+num--;
+
+} while (num >= 1); 
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Pedir números hasta ingresar 0
+Consigna:
+Solicitar al usuario ingresar números hasta que escriba 0. Mostrar cada número ingresado.
+
+let num;
+
+do {
+
+num = parseInt(prompt(`Ingrese sus numeros: <br>`))
+document.write(`ingresaste: ${num} <br>`)
+
+} while (num !== 0);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Validar contraseña
+Consigna:
+Pedir al usuario que escriba la contraseña "admin123" hasta que la escriba correctamente.
+
+let contraseña = "admin123";
+
+do {
+
+contraseña = prompt(`Inserte su clave: `)
+
+} while (contraseña !== "admin123");
+
+document.write(`Acceso conseguido`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Mostrar los primeros 10 múltiplos de 3
+Consigna:
+Usar do...while para mostrar los primeros 10 múltiplos de 3.
+
+let contador = 1;
+
+do {
+document.write( contador * 3, "<br>" );
+contador++;
+
+} while (contador <= 10);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contar cuántos números negativos se ingresan
+Consigna:
+Pedir al usuario ingresar números hasta que escriba un número positivo. Contar cuántos negativos se ingresaron antes.
+
+let contador = 0;
+let numero;
+
+do {
+
+
+numero = parseInt(prompt(`Inserte sus numeros: `))
+if ( numero < 0 ) {
+contador++;
+}
+} while ( numero < 0);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Imprimir del 1 al 4
+Consigna:
+Usar do...while para mostrar los números del 1 al 4 en consola.
+
+let num = 1;
+
+do {
+
+    document.write(`Numero : ${num} <br>`)
+    num++;
+} while (num <= 4)
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Sumar 5 veces el número 2
+        Consigna:
+        Usar do...while para sumar el número 2 cinco veces y mostrar el resultado.
+
+        let suma = 0;
+        let contador = 0;
+
+        do {
+
+            suma += 2
+            contador++;
+
+        } while (contador < 5);
+
+        document.write(suma)
+      */
+
+// ---------------------- 0 --------------------- //
+
+/*
+Mostrar la palabra "Hola" 3 veces
+Consigna:
+Imprimir la palabra "Hola" exactamente 3 veces usando do...while.
+
+let veces = 0;
+
+do { 
+document.write(`Hola `);
+veces++;
+
+
+} while ( veces < 3)
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Contador regresivo desde 3
+Consigna:
+Contar hacia atrás desde 3 hasta 1 con do...while.
+
+let num = 3;
+
+do {
+
+document.write(num, "<br>");
+num--;
+
+} while (num >= 1);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Mostrar los números pares entre 2 y 6
+Consigna:
+Mostrar los números pares entre 2 y 6 usando do...while.
+
+let num = 2;
+
+
+do {
+if (num % 2 === 0) {
+    document.write(num, " <br>")
+}
+num++;
+} while (num <= 6);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/* 
+num  = 60
+num2 = 4
+
+function calculo (num, num2 ) {
+let dividir = num / num2;
+document.write(`Sudivicion dio: ${dividir}`)
+}
+
+calculo(num, num2)
+ */
+
+// ---------------------- 0 --------------------- //
+
+// ---------------------- FUNCIONES --------------------- //
+
+/*
+Crear una función llamada saludar que reciba un nombre como parámetro y muestre "Hola, <nombre>".
+
+function saludar(nombre) {
+
+    document.write(`Hola ${nombre}`)
+}
+
+saludar("Esel");
+saludar("Laura");
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Función que suma dos números
+Consigna:
+Crear una función sumar que reciba dos números y devuelva la suma.
+
+function sumar (num, num1) {
+let sumar = num + num1
+document.write(`su suma es: ${sumar}`)
+}
+
+sumar(20, 20)
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Función que muestra los números del 1 al N
+Consigna:
+Crear una función contarHasta que reciba un número n y muestre del 1 hasta n.
+
+function contarHasta (n) {
+let i = 1;
+while (i <= n) {
+    document.write(i, "<br>");
+i++;
+}
+}
+contarHasta(10);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Crea una función llamada sumarNumeros que reciba dos parámetros numéricos. La función debe sumar esos dos números e imprimir el resultado con un mensaje claro.
+
+function sumarNumeros (num1, num2) {
+
+let sumar = num1 + num2;
+document.write(`La suma es: ${sumar}`);
+
+} 
+
+sumarNumeros(5,8)
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Escribe un bucle for que imprima los números del 1 al 5 en la consola.
+
+for (let i = 1; i <= 5; i++) {
+    document.write(i, "<br>");
+}
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Usa dos bucles for anidados para mostrar una tabla de coordenadas. La fila debe ir del 1 al 3 y la columna del 1 al 2.
+Formato de salida: "Fila: X, Columna: Y"
+
+for ( let fila = 1; fila <= 3; fila++ ) {
+    for ( let col = 1; col <= 2; col++ ) {
+        document.write(`Fila: ${fila}, Columna : ${col} <br>`);
+    }
+};
+};
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Crea un bucle while que imprima los números del 1 al 5.
+
+let i = 1;
+
+while (i <= 5) {
+document.write(`Numero: ${i} <br>`)
+i++;
+};
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Crea un bucle do while que imprima los números del 1 al 5.
+Recuerda que el do while ejecuta el bloque de código al menos una vez.
+
+let num = 1;
+
+do {
+document.write(`numero : ${num} <br>`);
+num++;
+} while (num <= 5);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Crea una función llamada sumarHastaN que reciba un número n. La función debe usar un bucle for para sumar todos los números del 1 hasta n, y devolver el resultado.
+
+function sumarHastaN (n) {
+let suma = 0;
+for (let i = 1; i <= n; i++) {
+suma += i;
+
+}
+return suma;
+}
+
+document.write("Suma del 1 al 5: ", sumarHastaN(5));
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crea una función llamada mostrarTablas que reciba un número n. La función debe mostrar las tablas de multiplicar del 1 al n, usando bucles for anidados.
+
+        function mostrarTablas(n) {
+
+            for (fila = 1; fila <= n; fila++) {
+                document.write(`<br>Tabla del ${fila} <br><br>`);
+                for (col = 1; col <= 10; col++) {
+                    document.write(`${fila} x ${col} = ${fila * col} <br>`);
+                }
+                document.write(`---------------`);
+            }
+        }
+        mostrarTablas(8);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+Consigna:
+Crea una función llamada contarHastaCinco que utilice un bucle do while para contar desde 1 hasta 5 y mostrar cada número en la terminal.
+
+        function contarHastaCinco() {
+
+            let contador = 1;
+            do {
+
+                document.write(`Numero: ${contador} <br>`);
+                contador++;
+
+            } while (contador <= 5);
+        }
+
+        contarHastaCinco();
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+Crea una función llamada sumarArray que reciba un array de números. Usa un bucle for para sumar sus elementos y devuelve el total.
+
+function sumarArray (array) {
+let suma = 0;
+
+for (let i = 0; i < array.length; i++) {
+suma += array[i]
+}
+return suma;
+}
+
+document.write("Suma del array: <b>", sumarArray([1, 2, 3, 4, 5]));
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crea una función llamada mostrarPares que reciba un número n. La función debe mostrar todos los números pares desde 1 hasta n usando un bucle for.
+
+        function mostrarPares(n) {
+
+            for (let num = 1; num <= n; num++) {
+                if (num % 2 === 0) {
+                    document.write(`par: ${num} <br>`);
+
+                }
+            }
+        }
+
+        mostrarPares(20);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+Crea una función llamada contarAtras que reciba un número n. Usa un bucle while para contar desde n hasta 1, mostrando cada número.
+
+        function contarAtras(n) {
+
+            while (n >= 1) {
+                document.write(`Numero : ${n} <br>`)
+                n--;
+            }
+        }
+        contarAtras(10);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+Crea una función llamada repetirMensaje que reciba un mensaje como parámetro. La función debe mostrar el mensaje 3 veces usando un bucle do while.
+
+function repetirMensaje (mensaje) {
+let contador = 1;
+
+do {
+document.write(mensaje, "<br>")
+contador++;
+
+
+} while (contador <= 3);
+}
+
+repetirMensaje("Hola Mundo");
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+Crea una función llamada mostrarElementos que reciba un array y muestre cada uno de sus elementos usando un bucle for.
+
+        function mostrarElementos(array) {
+
+            for (let i = 0; i < array.length; i++) {
+                document.write(`elemento: ${array[i]} <br>`);
+
+            }
+        }
+
+        mostrarElementos(["manzana", "banana", "pera"]);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Crea una función llamada tablaDeSumar que muestre la tabla de sumar del número 5 (desde 1 hasta 5) usando un bucle for (sin números aleatorios ni complicaciones).
+
+function tablaDeSumar () {
+for (let i = 1; i <= 5; i++) {
+document.write(`5 + ${i} = ${5 + i} <br>`);
+}
+}
+tablaDeSumar();
+*/
+
+// ---------------------- 0 --------------------- //
+
+
+        /*
+        Crea una función llamada mostrarImpares que reciba un número n. Debe mostrar todos los números impares del 1 al n usando un bucle for.
+        
+
+        function mostrarImpares(n) {
+
+            for (let i = 1; i <= n; i++)
+                if (i % 2 === 1) {
+                    document.write(`impar: ${i} <br>`);
+
+                }
+        }
+
+        mostrarImpares(10);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+Crea una función llamada sumarPares que reciba un número n. La función debe sumar solo los números pares del 1 al n usando un bucle for, y devolver el resultado.
+
+function sumarPares (n) {
+    let suma = 0;
+for (let i = 1; i <= n; i++) {
+if (i % 2 === 0) {
+suma += i
+}
+}
+return suma;
+}
+document.write("Suma de pares hasta 10: <b>", sumarPares(10))
+*/
+
+// ---------------------- 0 --------------------- //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
