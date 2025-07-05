@@ -2509,28 +2509,116 @@ document.write("Suma de pares hasta 10: <b>", sumarPares(10))
 
 // ---------------------- 0 --------------------- //
 
+        /*
+        Crea una función llamada sumarHastaN(n) que reciba un número entero positivo n y calcule la suma de todos los números desde 1 hasta n. Utiliza un bucle for.
+        Muestra el resultado en la consola.
 
+        function sumarHastaN(n) {
 
+            let suma = 0;
+            for (let i = 1; i <= n; i++) {
+                suma += i;
+            }
+            document.write(`La suma es: ${suma}`);
+        }
+        sumarHastaN(5);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Crea una función mostrarTablas() que imprima las tablas de multiplicar del 1 al 3.
+        Usa bucles for anidados: el primero para el número base (1 a 3), y el segundo para multiplicar del 1 al 5.
 
+        function mostrarTablas() {
 
+            for (let i = 1; i <= 10; i++) {
+                document.write(`<br><b> Tabla del ${i} </b><br><br>`);
+                for (let j = 1; j <= 10; j++) {
+                    document.write(`${i} x ${j} = <b>${i * j}</b> <br>`);
+                }
+                document.write(`<br>------- <b>O</b> -------<br>`);
+            }
+        }
 
+        mostrarTablas();
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+        Crea una función llamada contarRegresivamente(desde) que imprima los números desde el valor desde hasta 1 usando un bucle while.
+        
 
+        function contarRegresivamente(desde) {
 
+            while (desde >= 1) {
+                document.write(`N°: <b>${desde}</b><br>`);
+                desde--;
+            }
+        }
 
+        contarRegresivamente(10);
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Crea una función llamada lanzarDado() que simule el lanzamiento de un dado hasta que salga un 6.
+Muestra el número obtenido en cada tirada. Utiliza un bucle do while.
 
+function lanzarDado() {
 
+let dado;
+do  {
+dado = Math.floor( Math.random() *6) +1;
+document.write(`Lanzamiento: ${dado}<br>`);
+} while (dado !== 6);
+document.write(`!! BIEN SALIO UN 6 ¡¡`);
+}
 
+lanzarDado();
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Crea una función llamada sumarArray(arr) que reciba un array de números y sume todos sus elementos usando un bucle for.
+        Muestra el resultado total en la consola.
 
+        function sumarArray(arr) {
 
+            let suma = 0;
+            for (let i = 0; i < arr.length; i++) {
+                suma += arr[i];
+            }
+            document.write(`La suma es: ${suma}`)
+        }
+        sumarArray([4, 7, 1, 8]);
+  */
 
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crea una función contarPares(n) que cuente cuántos números pares hay desde 1 hasta n.
+        Imprime cada número par encontrado y el total de pares.
+
+        function contarPares(n) {
+
+            let contador = 0;
+            for (let i = 1; i <= n; i++) {
+                if (i % 2 === 0) {
+                    document.write(`Pares encontrados: <b>${i}</b><br>`);
+                    contador++;
+                }
+            }
+            document.write(`<br> <b> Total de pares: ${contador} </b><br>`);
+        }
+
+        contarPares(10);
+*/
+
+// ---------------------- 0 --------------------- //
 
 
 
