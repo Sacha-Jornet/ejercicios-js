@@ -2620,47 +2620,204 @@ lanzarDado();
 
 // ---------------------- 0 --------------------- //
 
+        /*
+Crea una función repetirMensaje(mensaje, veces) que imprima el mensaje indicado la cantidad de veces que se le pase como parámetro, usando un bucle while.
 
 
+        function repetirMensaje(mensaje, veces) {
+
+            let contador = 0;
+
+            while (contador < veces) {
+                document.write(mensaje);
+                contador++;
+            }
+        }
+        repetirMensaje("<br>¡Hola Mundo!", 3);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crea una función pedirNumeros() que solicite al usuario ingresar números hasta que ingrese uno negativo.
+        Usa prompt() y do while. Muestra cada número ingresado.
+
+        function pedirNumeros() {
+
+            let numero;
+            do {
+                numero = parseInt(prompt(`Ingrese sus numeros aqui:`));
+                document.write(`Los numeros ingresados son : ${numero} <br>`);
 
 
+            } while (numero >= 0);
+            document.write(`<br> Se ingreso un numero negativo... fin del programa`);
+        }
+pedirNumeros()
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crear una función que reciba un número límite y muestre en consola todos los números pares desde 0 hasta ese número, utilizando un bucle for.
+        
+        Lógica del ejercicio:
+        La función debe recibir un parámetro (limite).
+        
+        Con un bucle for, debe recorrer desde 0 hasta limite.
+        
+        Si el número es par (% 2 === 0), lo muestra en consola.
+
+        function numerosPares(num) {
+
+            for (let i = 0; i <= num; i++) {
+                if (i % 2 === 0) {
+                    document.write(`Los numeros pares son: ${i}<br>`);
+                }
+            }
+        };
+
+        numerosPares(10);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crear una función que imprima las tablas de multiplicar del 1 al 3, cada tabla del 1 al 5, usando bucles for anidados.
+
+        function tablasMulti() {
+            for (let mul = 1; mul <= 10; mul++) {
+                document.write(`<br>Tabla de multiplicar del:<b>${mul}</b><br><br>`);
+                for (let tab = 1; tab <= 10; tab++) {
+                    document.write(`${mul}X${tab}=<b>${mul * tab}</b><br>`);
+                }
+                document.write(`<br><b>-----o-----</b><br>`);
+            }
+        };
+        tablasMulti();
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crear una función que cuente regresivamente desde un número dado hasta 0 usando un bucle while.
+
+        function regrecionDeNumeros(num) {
+            document.write(`N°: ${num} a 0. <br>`);
+            while (num >= 0) {
+                document.write("<br>", num);
+            num--;
+            }
+        }
+        regrecionDeNumeros(10);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crear una función que simule el lanzamiento de un dado hasta que salga un 6, usando do while.
+
+        function tirarDado() {
+            let numero;
+            numero = Math.floor(Math.random() * 6) + 1;
+            document.write(`Primer lanzamiento: ${numero}<br>`);
+            do {
+                numero = Math.floor(Math.random() * 6) + 1;
+                document.write(`<br>lanzamiento: ${numero}<br>`);
+            } while (numero !== 6);
+            document.write("<br>¡Ha salido un 6, fin del juego!");
+        }
+        tirarDado();
+*/
+
+// ---------------------- 0 --------------------- //
 
 
+        /*
+        Crear una función que reciba un array de nombres y los muestre uno por uno en consola.
+
+        function mostrarValores(nombres) {
+            document.writwe(`Lista de nombres: `);
+            for (let nom = 0; nom < nombres.length; nom++) {
+                document.writwe(`${nombres[nom]}`);
+            }
+        }
+        document.write(["Ana", "Luis", "María", "Pedro"]);
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*         
+        Crear una función que reciba una matriz (array dentro de otro array) y muestre todos sus elementos con dos bucles for.
+
+        function matrizElementos(matriz) {
+            document.write(`Elementos de matriz <br>`);
+            for (let fila = 0; fila < matriz.length; fila++) {
+                for (let colum = 0; colum < matriz[fila].length; colum++) {
+                    document.write("<br>", matriz[fila][colum]);
+                }
+            }
+        }
+        matrizElementos([
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]);
+ */
+
+// ---------------------- 0 --------------------- //
 
 
+        /*
+        Crear una función que muestre los números del 10 al 15 usando un bucle while.
+
+        function mostrandoNumeros() {
+
+            let numero = 10;
+            while (numero <= 15) {
+                document.write(`N°: ${numero} <br>`);
+                numero++;
+            }
+        }
+        mostrandoNumeros();
+*/
+
+// ---------------------- 0 --------------------- //
+
+/*
+        Crear una función que recorra una palabra y muestre letra por letra usando do while.
+
+        function recorrerLertraxLetra(palabra) {
+            let i = 0;
+            document.write(`Letras de la palabra: ${palabra}<br>`);
+            do {
+                document.write(palabra[i]);
+                i++;
+            } while (i < palabra.length);
+        }
+
+        recorrerLertraxLetra("Hola perro");
+*/
+
+// ---------------------- 0 --------------------- //
 
 
+        /*
+        Crear una función que sume solo los números pares del 1 al 10 y muestre el resultado.
 
+        function sumaPares() {
+            let suma = 0;
+            for (let i = 1; i <= 10; i++) {
+                if (i % 2 === 0) {
+                    suma += i;
+                }
+            }
+            document.write(`Suma Total del 1 al 10: ${suma}`);
+        }
+        sumaPares();
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ---------------------- 0 --------------------- //
 
 
 
