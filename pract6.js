@@ -2820,27 +2820,145 @@ pedirNumeros()
 // ---------------------- 0 --------------------- //
 
 
+        /*
+        Crear una función que reciba un número n y devuelva la suma de los primeros n números pares positivos.
+        Usar un bucle for para realizar el cálculo.
+        
+
+        function sumaTotal(numX) {
+            let suma = 0;
+
+            for (let i = 1; i <= numX; i++) {
+                if (i % 2 === 0) {
+                    suma += i;
+                }
+            }
+            return suma;
+        }
+        document.write(`Suma Total: ${sumaTotal(10)}`);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crea una función que imprima en consola la tabla de multiplicar del 1 al 5, hasta el 10.
+        Usa un bucle for anidado.
+
+        function tablasX() {
+
+            for (let fil = 1; fil <= 10; fil++) {
+                document.write(`<br><b>Tabla de Multiplicar del ${fil}</b><br><br>`);
+                for (col = 1; col <= 10; col++) {
+                    document.write(`${fil} x ${col} = <b>${fil * col}</b><br>`);
+                }
+            }
+        }
+
+        tablasX();
+*/
+
+// ---------------------- 0 --------------------- //
+
+    /*
+        Crear una función que cuente cuántas veces hay que sumar 1 partiendo de 0 hasta llegar a un número n, mostrando cada paso por consola.
+        Usar bucle while.
+
+        function sumarX(num) {
+            let numero = 0;
+            let contador = 0;
+
+            while (numero < num) {
+                contador++;
+                numero++;
+                document.write(`<br>PASO ${contador} : ${numero}`)
+            }
+            return `Total pasos: ${contador}`;
+        }
+        sumarX(sumarX(10));
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Sumar los primeros N números pares
+        Objetivo: Comprender el uso de bucles for dentro de funciones.
+
+        function numerosPares(nNum) {
+            let suma = 0;
+            let contador = 0;
+            for (let i = 2; i <= nNum; i++) {
+                if (i % 2 === 0) {
+                    suma += i;
+                    contador++;
+                }
+            }
+            document.write(`La suma de numeros pares es ${suma}<br>`);
+            document.write(`Total de números pares encontrados: ${contador}`);
+        }
+        numerosPares(5);
+ */
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Tabla de multiplicar (for anidado + función)
+        Objetivo: Usar for anidado dentro de una función para imprimir varias tablas de multiplicar.
+        
+
+        function tabla(n) {
+
+            for (let fila = 1; fila <= n; fila++) {
+                document.write(`<br>Tabla del ${fila}<br><br>`)
+                for (let col = 1; col <= 10; col++) {
+                    document.write(`${fila} x ${col} = ${fila * col} <br>`);
+                }
+            }
+
+        }
+
+        tabla(5)
 
 
 
+function tabla(n) {
+    document.write(`<b><br> Tabla del ${n} <br><br></b> `)
 
+            for (let fila = 1; fila <= 10; fila++) {
+                document.write(`${n} x ${fila} = <b>${n * fila} </b><br>`);
+            }
+        }
+            tabla(5);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Adivina el número (while + función)
+        Objetivo: Combinar while y función para simular un juego simple.
 
+        function adivinar(secreto) {
 
+            let intento = 0;
+            let numero = 0;
+            const maxInt = 3;
 
+            while (numero !== secreto && intento < maxInt) {
+                numero = Math.floor(Math.random() * 5) + 1
+                intento++;
+                document.write(`Intento ${intento}: ${numero}<br>`)
+            }
+            if (numero === secreto) {
+                document.write(`¡Adivinaste el número ${secreto} en ${intento} intentos!<br>`);
+            }
+            else {
+                document.write(`No se adivinó el número ${secreto} en ${maxInt} intentos.<br>`);
+            }
+        }
 
+        adivinar(4)
+*/
 
-
-
-
-
-
-
-
-
-
-
+// ---------------------- 0 --------------------- //
 
 
 
