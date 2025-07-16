@@ -2960,29 +2960,177 @@ function tabla(n) {
 
 // ---------------------- 0 --------------------- //
 
+        /*
+        Repetir mensaje hasta confirmar (do...while + función)
+        Objetivo: Practicar do...while dentro de una función simulando un ingreso de confirmación.
+        */
+
+        /* function confi() {
+            let respuesta;
+            let intentos = 0;
+
+            do {
+                usuario = prompt("¿Estás seguro? (sí/no)").toLowerCase()
+                intentos++;
+            } while (respuesta !== "si")
+
+            document.write(`Confirmado luego de ${intentos} intento(s).`)
+
+        }
+
+confi() */
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Evaluar un conjunto de notas y mostrar su clasificación.
+
+        function evaluarNotas() {
+
+            for (let i = 0; i <= listaNotas.length; i++) {
+                let notas = listaNotas[i]
+                if (notas >= 9) {
+                    document.write(`Aprobado calificacion excelente`);
+                } else if (notas >= 7) {
+                    document.write(`Aprobado calificacion buena`);
+                } else if (nota >= 4) {
+                    console.log(`Nota ${nota}: Regular`);
+                } else {
+                    console.log(`Nota ${nota}: Reprobado`);
+                }
+            }
+        }
+
+        evaluarNotas([10, 7.5, 6, 3]);
+*/
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crear una función llamada clasificarNumeros que reciba un array de números y devuelva cuántos son positivos, negativos y cero.
+        Debe utilizar un bucle for para recorrer el array y estructuras if/else if/else para clasificar.
+
+        function clasificarNumeros(array) {
+            let positivos = 0;
+            let negativos = 0;
+            let ceros = 0;
+
+            for (i = 0; i <= array.length; i++) {
+                if (array[i] > 0) {
+                    positivos++;
+                } else if (array[i] < 0) {
+                    negativos++;
+                } else {
+                    ceros++;
+                }
+            }
+            document.write("<b>Positivos:</b> ", positivos, "<br>");
+            document.write("<b>Negativos:</b> ", negativos, "<br>");
+            document.write("<b>Ceros:</b> ", ceros);
+        }
+
+        clasificarNumeros([4, -1, 0, 3, -2, 0, 7]);
+ */
+
+// ---------------------- 0 --------------------- //
+
+        /*
+        Crear una función adivinarNumero que simule un juego donde el usuario intenta adivinar un número secreto entre 1 y 5.
+        Utilizar un bucle while que se repita hasta que el número ingresado sea correcto.
+        Usar prompt() y alert() en un entorno browser (sustituible por readline si es terminal).
+
+        function adivinarNumero() {
+
+            let intento = null;
+            const secreto = 3
+
+            while (intento !== secreto) {
+                intento = parseInt(prompt("Adivina el número entre 1 y 5: "));
+                if (intento < secreto) {
+                    alert("Muy bajo");
+                } else if (intento > secreto) {
+                    alert("Muy alto");
+                } else if (intento === secreto) {
+                    alert("¡ CORRECTO !");
+                } else {
+                    alert("¡ Entrada incorrecta !");
+                }
+            }
+        }
+
+        adivinarNumero();
+
+*/
+
+// ---------------------- 0 --------------------- //
+
+    /*
+        Crear una función procesarProductos que reciba un array de objetos con nombre y categoria (A, B o C).
+        Para cada categoría, multiplicar el índice por un factor distinto:
+        
+        A × 10
+        
+        B × 5
+        
+        C × 2
+        
+        Usar for anidado para recorrer y switch para decidir el valor.
 
 
+        function procesarProductos(productos) {
 
+            for (let i = 0; i < productos.length; i++) {
+                let producto = productos[i];
+                let resultado = 0;
 
+                switch (producto.categoria) {
+                    case "A":
+                        resultado = i * 10;
+                        break;
+                    case "B":
+                        resultado = i * 5;
+                        break;
+                    case "C":
+                        resultado = i * 2;
+                        break;
+                    default:
+                        resultado = 0;
+                }
+                document.write(`Producto <b>${producto.nombre}</b>(cat <b>${producto.categoria}</b>) → <b>${resultado}</b><br>`);
+            }
+        }
 
+        procesarProductos([
+            { nombre: "Lápiz", categoria: "A" },
+            { nombre: "Goma", categoria: "B" },
+            { nombre: "Regla", categoria: "C" },
+            { nombre: "Cuaderno", categoria: "A" }
+        ]);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Crear una función sumarMultiplosDe3 que utilice un bucle do while para recorrer del 1 al 30, y sume solo los múltiplos de 3.
 
+        function sumarMultiplosDe3() {
 
+            let num = 1;
+            let suma = 0;
 
+            do {
+                if (num % 3 === 0) {
+                    suma += num;
+                }
+                num++;
+            } while (num <= 30)
+            document.write("Suma de múltiplos de 3:", suma);
+        }
 
+        sumarMultiplosDe3();
+*/
 
-
-
-
-
-
-
-
-
-
-
-
+// ---------------------- 0 --------------------- //
 
 
 
