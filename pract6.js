@@ -3132,25 +3132,106 @@ confi() */
 
 // ---------------------- 0 --------------------- //
 
+/*
+Crear una función verificarParImpar que reciba un número y use if para decir si es par o impar.
 
+function verificarParInpar(numero) {
+if (numero % 2 === 0) {
+    document.write(`<br>El numero es par<br>`);
+} else {
+    document.write(`<br>El numero es Inpar<br>`);
+}
+}
 
+verificarParInpar(9);
+verificarParInpar(12);
+verificarParInpar(7);
+verificarParInpar(24);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Objetivo: Crear una función que reciba un número y cuente cuántos números son pares y cuántos impares desde 1 hasta ese número.
 
+        function paresImpares(num) {
+            let par = 0;
+            let impar = 0;
 
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 === 0) {
+                    par++;
+                } else {
+                    impar++;
+                }
+            }
+            document.write(`Entre 1 y ${num}: <br>`);
+            document.write(`<br>Pares: ${par}<br>`);
+            document.write(`Impares: ${impar}`);
+        }
+        paresImpares(10);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Objetivo: Crear una función que imprima la tabla de multiplicar de un número. Si el número es mayor a 10, mostrar un mensaje de error.
 
+        function tablamulti(num) {
 
+            if (num < 1) {
+                document.write(`Error..El numero tiene que ser mayor a 1`);
+            } else if (num > 10) {
+                document.write(`Error..El numero debe ser menor a 10`);
+            } else {
+                for (let i = 1; i <= 10; i++) {
+                    document.write(`${num} x ${i} = <b>${num * i}</b><br>`);
+                }
+            }
+        }
 
+        tablamulti(7);
+*/
 
+// ---------------------- 0 --------------------- //
 
+        /*
+        Objetivo: Pedir números hasta que el usuario ingrese un número negativo. Mostrar la suma total.
 
+        function ingresarNumeros() {
+            let suma = 0;
+            let numero = 0;
 
+            while (numero >= 0) {
+                numero = parseInt(prompt(`Ingrese sus numeros (Negativo para salir)`));
+                if (numero >= 0) {
+                    suma += numero;
+                }
+            }
+            document.write(`La suma total es: ${suma}`);
+        }
 
+        ingresarNumeros();
+*/
 
+// ---------------------- 0 --------------------- //
 
+/*
+Objetivo: Mostrar números del 1 al 10 usando do...while.
 
+function mostrarNumeros() {
+let num = 1;
+    do{
+        document.write(`Numero : ${num} <br>`)
+        num++;
+
+    }while( num <= 10);
+}
+
+mostrarNumeros()
+*/
+
+// ---------------------- 0 --------------------- //
 
 
 
