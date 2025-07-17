@@ -3233,7 +3233,22 @@ mostrarNumeros()
 
 // ---------------------- 0 --------------------- //
 
+/*
+Crear una función que reciba un número y dibuje una pirámide de asteriscos.
 
+function dibujarpiramide(num) {
+
+    for(let i = 1; i <= num; i++){
+        let linea = "";
+        for(let j = 1; j <= num; j++) {
+            linea += "*";
+        }
+        document.write(linea);
+    }
+}
+
+dibujarpiramide(5);
+*/
 
 
 
